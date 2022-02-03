@@ -1,35 +1,36 @@
 import logo from './logo.svg'
 import './App.css'
+import 
 import axios from 'axios'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div class="container">
-          <div class="weather-app-wrapper">
-            <div class="weather-app">
-              <form id="search-form" class="mb-3">
-                <div class="row">
-                  <div class="col-9">
+        <div className="container">
+          <div className="weather-app-wrapper">
+            <div className="weather-app">
+              <form id="search-form" className="mb-3">
+                <div className="row">
+                  <div className="col-9">
                     <input
                       type="search"
                       placeholder="Type a city.."
-                      class="form-control"
+                      className="form-control"
                       id="city-input"
                       autocomplete="off"
                     />
                   </div>
-                  <div class="col-3">
+                  <div className="col-3">
                     <input
                       type="submit"
                       value="Search"
-                      class="btn btn-primary w-100"
+                      className="btn btn-primary w-100"
                     />
                   </div>
                 </div>
               </form>
-              <div class="overview">
+              <div className="overview">
                 <h1 id="city"></h1>
                 <ul>
                   <li>
@@ -39,17 +40,17 @@ function App() {
                   <li id="description"></li>
                 </ul>
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <div class="clearfix weather-temperature">
-                    <img src="" alt="Clear" id="icon" class="float-left" />
-                    <div class="float-left">
+              <div className="row">
+                <div className="col-6">
+                  <div className="clearfix weather-temperature">
+                    <img src="" alt="Clear" id="icon" className="float-left" />
+                    <div className="float-left">
                       <strong id="temperature"></strong>
-                      <span class="units">°C</span>
+                      <span className="units">°C</span>
                     </div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div className="col-6">
                   <ul>
                     <li>
                       Humidity:
@@ -63,7 +64,7 @@ function App() {
                   </ul>
                 </div>
               </div>
-              <div class="weather-forecast" id="forecast"></div>
+              <div className="weather-forecast" id="forecast"></div>
             </div>
             <small>
               <a
