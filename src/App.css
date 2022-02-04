@@ -1,40 +1,76 @@
 .App {
   text-align: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    #387ffb 0%,
+    #34c4ff 40%,
+    #ffc6d0 75%,
+    #ffceaa 95%
+  );
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  padding: 20px;
+  border-radius: 100%;
+  background: radial-gradient(#fff8 30%, #fff0);
+  clip-path: path('M 0 0 L 20 0 C 30 0 30 40 20 40 L 0 40');
+  transform: rotate(-20deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #111;
+  height: 10%;
+  clip-path: polygon(
+    0% 50%,
+    0% 100%,
+    100% 100%,
+    100% 50%,
+    96% 33%,
+    92% 50%,
+    88% 50%,
+    83% 17%,
+    83% 33%,
+    79% 33%,
+    79% 17%,
+    73% 17%,
+    73% 50%,
+    69% 33%,
+    63% 33%,
+    60% 50%,
+    58% 33%,
+    54% 17%,
+    54% 0%,
+    52% 0%,
+    52% 17%,
+    44% 17%,
+    42% 33%,
+    37% 33%,
+    37% 0%,
+    35% 0%,
+    35% 33%,
+    33% 33%,
+    33% 17%,
+    29% 17%,
+    29% 50%,
+    23% 33%,
+    17% 33%,
+    12% 50%,
+    12% 33%,
+    2% 33%,
+    2% 50%
+  );
 }
 
 h1 {

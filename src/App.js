@@ -18,7 +18,14 @@ function App() {
               >
                 Open-source code
               </a>
-              by Erika
+              on{' '}
+              <a
+                href="https://priceless-tereshkova-1e0273.netlify.app"
+                target="_blank"
+              >
+                Netflify
+              </a>
+              🌸🌸 by Erika
             </small>
           </div>
         </div>
