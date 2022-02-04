@@ -11,6 +11,15 @@ function App() {
             <h1>Tereshkova Weather App</h1>
             <br />
             <WeatherSearch />
+            <small>
+              <a
+                href="https://github.com/gh4ever/weather-react-app"
+                target="_blank"
+              >
+                Open-source code
+              </a>
+              by Erika
+            </small>
           </div>
         </div>
       </div>
