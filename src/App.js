@@ -8,9 +8,12 @@ function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
+            <br />
+            <br />
             <h1>Tereshkova Weather App</h1>
             <br />
             <WeatherSearch />
+            <br />
             <small>
               <a
                 href="https://github.com/gh4ever/weather-react-app"
