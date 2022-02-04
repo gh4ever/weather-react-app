@@ -17,15 +17,15 @@ function App() {
                 target="_blank"
               >
                 Open-source code
-              </a>
-              on{' '}
+              </a>{' '}
+              and on{' '}
               <a
                 href="https://priceless-tereshkova-1e0273.netlify.app"
                 target="_blank"
               >
                 Netflify
-              </a>
-              🌸🌸 by Erika
+              </a>{' '}
+              by Erika
             </small>
           </div>
         </div>
