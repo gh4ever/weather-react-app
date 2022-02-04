@@ -81,8 +81,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073,
-    0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f08fbf, 0 0 40px #ff62b1,
+    0 0 50px #ffafd7, 0 0 60px #ff0381, 0 0 70px #e60073;
 }
 
 li {
