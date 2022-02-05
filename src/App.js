@@ -18,6 +18,7 @@ function App() {
               <a
                 href="https://github.com/gh4ever/weather-react-app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Open-source code
               </a>{' '}
@@ -25,6 +26,7 @@ function App() {
               <a
                 href="https://priceless-tereshkova-1e0273.netlify.app"
                 target="_blank"
+                rel="noreferrer"
               >
                 Netflify
               </a>{' '}
