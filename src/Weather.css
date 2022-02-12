@@ -11,6 +11,9 @@
   font-weight: 100;
   margin: 20px 0 0 0;
   line-height: 29px;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f08fbf, 0 0 40px #ff62b1,
+    0 0 50px #ffafd7, 0 0 60px #ff0381, 0 0 70px #e60073;
 }
 
 .Weather ul {
