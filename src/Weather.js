@@ -4,21 +4,21 @@ import WeatherForecast from './WeatherForecast'
 import axios from 'axios'
 import './Weather.css'
 
-export default function WeatherSearch() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false })
-  let [city, setCity] = useState(props.defaultCity)
+  const [city, setCity] = useState(props.defaultCity)
 
   function handleResponse(response) {
     setWeatherData({
       ready: true,
       coord: response.data.coord,
       temperature: response.data.main.temp,
-      wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
-      city: response.data.name,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
+      wind: response.data.wind.speed,
+      city: response.data.name,
     })
   }
 
@@ -31,13 +31,9 @@ export default function WeatherSearch() {
     setCity(event.target.value)
   }
 
-  function showCity(event) {
-    setCity(event.target.value)
-  }
-
   function search() {
-    const apiKey = `384b4ddb18472833708d25e324b56156`
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+    const apiKey = '5f472b7acba333cd8a035ea85a0d4d4c'
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
     axios.get(apiUrl).then(handleResponse)
   }
 
@@ -49,7 +45,7 @@ export default function WeatherSearch() {
             <div className="col-9">
               <input
                 type="search"
-                placeholder="Enter the city you like"
+                placeholder="Enter a city.."
                 className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
@@ -59,7 +55,7 @@ export default function WeatherSearch() {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-default w-100"
+                className="btn btn-primary w-100"
               />
             </div>
           </div>
