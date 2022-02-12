@@ -9,14 +9,7 @@ export default function App() {
         <Weather defaultCity="Tel Aviv" />
 
         <footer>
-          This project was coded by{' '}
-          <a
-            href="https://www.linkedin.com/in/jung-hyun-ryu-a8b859192/"
-            target="_blank"
-          >
-            Erika Ryu
-          </a>{' '}
-          and is{' '}
+          This project was coded by Erika Ryu and is{' '}
           <a
             href="https://github.com/gh4ever/weather-react-app"
             target="_blank"
