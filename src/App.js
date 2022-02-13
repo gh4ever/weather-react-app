@@ -12,7 +12,7 @@ export default function App() {
             This project was coded by{' '}
             <a
               href="https://github.com/gh4ever"
-              rel="nonreferrer"
+              rel="noreferrer"
               target="_blank"
             >
               Erika
@@ -20,7 +20,7 @@ export default function App() {
             and is{' '}
             <a
               href="https://github.com/gh4ever/weather-react-app"
-              rel="nonreferrer"
+              rel="noreferrer"
               target="_blank"
             >
               open-sourced on GitHub
@@ -28,7 +28,7 @@ export default function App() {
             and{' '}
             <a
               href="https://priceless-tereshkova-1e0273.netlify.app"
-              rel="nonreferrer"
+              rel="noreferrer"
               target="_blank"
             >
               hosted on Netlify
