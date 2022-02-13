@@ -9,5 +9,10 @@
 }
 
 .container {
-  background-color: ghostwhite;
+  background: linear-gradient(
+    #abcaff 0%,
+    #9de2fd 40%,
+    #ffd2da 75%,
+    #fdddc7 95%
+  );
 }
