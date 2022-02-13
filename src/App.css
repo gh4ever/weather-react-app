@@ -4,6 +4,7 @@
 }
 
 .App footer {
+  text-align: center;
   font-size: 11px;
   margin: 10px 0;
 }
@@ -15,4 +16,5 @@
     #ffd2da 75%,
     #fdddc7 95%
   );
+  border-radius: 4px;
 }
